@@ -1,7 +1,7 @@
-Integrantes
+## Integrantes
 
-Andre Rovai        RM555848
-Lancelot Chagas    RM554707
+- Andre Rovai        RM555848
+- Lancelot Chagas    RM554707
 
 # 📘 README - Explicação das Mudanças e Refinamentos no Código do Colab
 
