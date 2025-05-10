@@ -8,6 +8,8 @@ Original file is located at
 """
 
 # Importações Essenciais
+!pip install numpy # Install specific NumPy version
+!pip install scikit-learn
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -16,6 +18,7 @@ from datetime import datetime
 import warnings
 
 # Imports do PyCaret
+!pip install --upgrade pycaret      # Upgrade PyCaret to latest version
 !pip install pycaret
 from pycaret.classification import *
 
@@ -33,14 +36,14 @@ print("Carregando dados...")
 # Tentar carregar os arquivos CSV
 # Presume-se que os arquivos estão no mesmo diretório do notebook ou foram carregados no Colab
 try:
-    df_treino_completo = pd.read_csv('data (2).csv', encoding='utf-8')
+    df_treino_completo = pd.read_csv('data.csv', encoding='utf-8')
     df_teste_final = pd.read_csv('Xtest.csv', encoding='utf-8') # Dados para previsão final (sem a coluna alvo)
     print("Dados carregados com sucesso.")
     print("Shape Dados de Treino:", df_treino_completo.shape)
     print("Shape Dados de Teste Final (Xtest.csv):", df_teste_final.shape)
 except FileNotFoundError:
     print("\nErro: Arquivo(s) CSV não encontrado(s).")
-    print("Certifique-se de que 'data (2).csv' e 'Xtest.csv' estão no ambiente do Colab.")
+    print("Certifique-se de que 'data.csv' e 'Xtest.csv' estão no ambiente do Colab.")
     print("Você pode carregá-los usando o painel 'Arquivos' à esquerda.")
     # Interromper a execução se os arquivos não forem encontrados
     exit()
