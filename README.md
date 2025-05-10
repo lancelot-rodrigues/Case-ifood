@@ -1,4 +1,11 @@
+Integrantes
+
+Andre Rovai        RM555848
+Lancelot Chagas    RM554707
+
 # 📘 README - Explicação das Mudanças e Refinamentos no Código do Colab
+
+Link do colab: https://colab.research.google.com/drive/1jRnfc7cWyBFYIvCrf0WFjuRGRSWtnbuQ?usp=sharing
 
 ## 📂 Estrutura do Notebook
 
